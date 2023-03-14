@@ -37,7 +37,7 @@ a:hover{
   width: 100%;
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   background-color: #000;
@@ -48,13 +48,29 @@ a:hover{
   )
 }
 
+#welcome-section > img{
+  display: absolute;
+  margin-top: 70px;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+}
+
+#about{ 
+  padding: 100px;
+}
+
+
 h1{
   color: white;
   font-size: 4rem;
   font-weight: 700;
 }
 
-#welcome-section > p{
+#about > p{
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 0px;
   color: #faf60d;
   font-size: 2rem;
   font-style: italic;
@@ -70,11 +86,21 @@ h1{
   flex-direction: column;
 }
 
+
+h3{
+  margin-top: 0px;
+  font-size: 2.2rem;
+  color: white;
+  text-decoration: underline
+}
+
  h2{
    margin-top: 0px;
   font-size: 3.2rem;
   color: white;
 }
+
+
 
 .projects-grid{
   margin: 0px;
@@ -91,6 +117,12 @@ h1{
   width: 300px;
 }
 
+.project-img:hover { 
+  box-shadow:   20px 20px 10px #aaaaaa;
+  ;
+
+}
+
 .project-img{
  width: 100%;
  display: flex;
@@ -99,7 +131,9 @@ h1{
 
 .project-tile{
   text-align: center;
- width: 100%
+ width: 100%;
+ font-family: Sans-serif;
+ font-size: 1.2rem;
 }
 
 
